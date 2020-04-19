@@ -28,7 +28,7 @@ jobs:
         node-version: 12.x
 
     # Runs a set of commands using the runners shell
-    - name: Deploy to netlify
+    - name: Deploy to netlify prod
       uses: netlify/actions/cli@master
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
