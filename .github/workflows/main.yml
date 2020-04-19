@@ -26,8 +26,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - run: npm install
-    - run: npm run export --if-present
 
     # Runs a set of commands using the runners shell
     - name: Deploy to netlify
