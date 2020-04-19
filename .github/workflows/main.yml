@@ -34,7 +34,7 @@ jobs:
     - run: npm install -g netlify-cli
     - run: npm install
     - run: npm run export
-    - run: netlify deploy --dir=out --prod --auth="$NETLIFY_AUTH_TOKEN" --site="$NETLIFY_SITE_ID"
+    - run: netlify deploy --dir=out --prod --auth=$NETLIFY_AUTH_TOKEN --site=$NETLIFY_SITE_ID
     
     # Runs a set of commands using the runners shell
     # - name: Deploy to netlify prod
