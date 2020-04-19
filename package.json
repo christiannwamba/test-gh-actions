@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next build && next start -p $PORT",
+    "start": "npx next build && npx next start -p $PORT",
     "export": "next build && next export",
     "serve": "npm run export && serve out -p 9000"
   },
